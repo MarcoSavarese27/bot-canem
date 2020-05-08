@@ -1,0 +1,23 @@
+{
+  "name": "bot-canem",
+  "version": "1.0.0",
+  "description": "A bot that does stuff on discord",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoSavarese27/bot-canem.git"
+  },
+  "keywords": [],
+  "author": "Marco Savarese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoSavarese27/bot-canem/issues"
+  },
+  "homepage": "https://github.com/MarcoSavarese27/bot-canem#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}
