@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const token = *your token*;
+const token = *token*;//substitute with your discord bot token
 
 const PREFIX = '!';
 
@@ -12,7 +12,7 @@ client.on('ready', () => {
 
 client.on('message', msg=>{
     if (msg.content == "Ciao Bot" || msg.content == "ciao" || msg.content == "Ciao" || msg.content == "ciao Canem" || msg.content == "Ciao Canem" || msg.content == "ciao canem"){
-        msg.reply ('Ciao amico di Canem Reborn');
+        msg.reply('Ciao amico di Canem Reborn');
     }
 })
 
@@ -32,8 +32,7 @@ client.on('message', msg=>{
             break;
         case 'cancella':
             if (!msg.member.roles.cache.find(r => r.name == "Admin")){
-            return msg.channel.send("ERRORE: Non hai i permessi per eseguire questo comando")
-            .then(msg => msg.delete(10000));
+            return msg.reply("ERRORE: Non hai i permessi per eseguire questo comando");
             } else{
             if (!args[1]) return msg.reply('ERRORE: scrivi quanti messaggi vuoi cancellare');
             msg.channel.bulkDelete(args[1]);
